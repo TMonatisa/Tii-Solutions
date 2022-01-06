@@ -1,0 +1,65 @@
+:root {
+    --primary: #11052C;
+    --secondary: #3D087B;
+    --tertiary: #f43b86;
+    --fourth: #FFE459;
+}
+.banner{
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+}
+.banner .background{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.banner h1{
+    color: white;
+    font-size: 100px;
+}
+.banner h2{
+    color: white;
+    font-size: 50px;
+}
+.banner .opacity{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(17, 5, 44, 0.5);
+    padding: 10px;
+}
+.banner .opacity .data-container{
+    padding: 100px;
+}
+.banner .opacity .data-container input[type="button"]{
+    background: none;
+    width: 200px;
+    height: 70px;
+    border: 2px solid var(--tertiary);
+    color: var(--tertiary);
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 10px;
+    transition: 0.5s ease;
+    font-weight: bold;
+}
+.banner .opacity .data-container input[type="button"]:hover,
+.banner .opacity .data-container input[type="button"]:focus{
+    background-color: var(--tertiary);
+    color: white;
+}
+
+@media only screen and (max-width: 414px) {
+    .banner h1{
+        font-size: 35px;
+    }
+    .banner h2{
+        font-size: 25px;
+    }
+}

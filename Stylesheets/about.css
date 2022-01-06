@@ -1,0 +1,126 @@
+.about-sec {
+    padding: 20px;
+    width: 100%;
+}
+
+.about-sec h3 {
+    border-bottom: var(--tertiary) 1px solid;
+    width: auto;
+    padding: 10px;
+}
+
+.about-sec .row {
+    margin: 20px;
+}
+
+.about-sec .row img {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-sec .card {
+    height: 450px;
+    -webkit-box-shadow: -5px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -5px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: -5px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: -1;
+}
+
+.about-sec .card .card-body h4 {
+    margin: 10px;
+}
+
+.about-sec .card-body .circle {
+    width: 70px;
+    height: 70px;
+    /*background-color: #bbbbbb;*/
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px;
+}
+.about-sec .card-body .circle img{
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    border-radius: 0%;
+    object-fit: cover;
+}
+
+.about-sec span {
+    height: 100%;
+}
+
+#team img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+#team h4, #team h5, #team p {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+#team h4 {
+    border-bottom: var(--tertiary) 1px solid;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+#team h5 {
+    color: #bbbbbb;
+    font-size: 20px;
+    font-style: italic;
+    margin: 5px;
+}
+
+#contact .row {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+#contact input[type="email"],
+#contact input[type="text"],
+#contact textarea{
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    padding: 10px;
+}
+#contact input[type="text"]:first-child{
+    margin-right: 4px;
+    width: 49%;
+}
+#contact input[type="text"]:last-child{
+    margin-left: 4px;
+    width: 49%;
+}
+#contact input[type="button"] {
+    background: none;
+    border: 1px solid var(--tertiary);
+    border-radius: 5px;
+    color: #f43b86;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+#contact input[type="button"]:hover,
+#contact input[type="button"]:focus{
+    background-color: var(--tertiary);
+    color: white;
+}
+@media only screen and (max-width: 414px) {
+    #contact input[type="text"]:first-child,
+    #contact input[type="text"]:last-child{
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+}

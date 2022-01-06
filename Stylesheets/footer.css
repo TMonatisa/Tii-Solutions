@@ -1,0 +1,31 @@
+footer{
+    background-color: var(--primary);
+}
+footer h5,
+footer p{
+    letter-spacing: 2px;
+    color: white;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+footer ul li a {
+    color: white;
+    transition: 0.5s ease;
+    text-decoration: none;
+    margin-left: 10px;
+}
+footer ul li a:hover,
+footer ul li a:focus{
+    color: var(--tertiary);
+}
+footer .copyright{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+footer .copyright a{
+    color: white;
+}
+footer .table{
+    color: white;
+    border-color: white;
+}
